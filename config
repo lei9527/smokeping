@@ -101,56 +101,35 @@ remark = Welcome to this SmokePing website. <br />
 menu = 大陆方向
 title = 大陆方向
 nomasterpoll = yes
-host = /mainland/ct-gz~SLAVE_CODE /mainland/ct-sh~SLAVE_CODE /mainland/cu-gz~SLAVE_CODE /mainland/cu-sh~SLAVE_CODE /mainland/cm-gz~SLAVE_CODE /mainland/cm-sh~SLAVE_CODE
+host = /mainland/cu~SLAVE_CODE /mainland/ct~SLAVE_CODE /mainland/cm~SLAVE_CODE
 
-++ ct-gz
-
-menu = 广州电信
-title = 广州电信
+++ cu
+menu = 
+title = 联通
 slaves = SLAVE_CODE
-host = 14.215.116.1
+host = 60.26.200.1
 
-++ ct-sh
+++ ct
 
-menu = 上海电信
-title = 上海电信
+menu = 电信
+title = 电信
 slaves = SLAVE_CODE
-host = 180.153.28.5
+host = 219.150.32.132
 
-++ cu-gz
+++ cm
 
-menu = 广州联通
-title = 广州联通
+menu = 移动
+title = 移动
 slaves = SLAVE_CODE
-host = 157.255.70.5
+host = 211.137.160.5
 
-++ cu-sh
-
-menu = 上海联通
-title = 上海联通
-slaves = SLAVE_CODE
-host = 211.95.52.116
-
-++ cm-gz
-
-menu = 广州移动
-title = 广州移动
-slaves = SLAVE_CODE
-host = 120.232.176.254
-
-++ cm-sh
-
-menu = 上海移动
-title = 上海移动
-slaves = SLAVE_CODE
-host = 221.183.55.22
 
 + global
 
 menu = 国际方向
 title = 国际方向
 nomasterpoll = yes
-host = /global/cf~SLAVE_CODE /global/hk-pccw~SLAVE_CODE /global/sg-vu~SLAVE_CODE
+host = /global/cf~SLAVE_CODE /global/Netflix~SLAVE_CODE 
 
 ++ cf
 
@@ -159,16 +138,9 @@ title = Cloudflare
 slaves = SLAVE_CODE
 host = www.cloudflare.com
 
-++ hk-pccw
+++ Netflix
 
-menu = 香港 PCCW
-title = 香港 PCCW
+menu = Netflix
+title = Netflix
 slaves = SLAVE_CODE
-host = 63.216.151.43
-
-++ sg-vu
-
-menu = 新加坡 Vultr
-title = 新加坡 Vultr
-slaves = SLAVE_CODE
-host = 45.32.100.168
+host = www.netflix.com
